@@ -30,6 +30,6 @@ app.get('/api/:rapperName', (request, response)=>{
     response.json(rappers[rappersName])
 })
 
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log('server running better catch it')
 }) 
